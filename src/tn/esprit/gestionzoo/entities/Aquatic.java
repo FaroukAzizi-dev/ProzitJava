@@ -20,4 +20,8 @@ public class Aquatic extends Animal {
                 "habitat='" + habitat + '\'' +
                 '}';
     }
+
+    public void swim(){
+        System.out.println("This aquatic animal is swimming");
+    }
 }

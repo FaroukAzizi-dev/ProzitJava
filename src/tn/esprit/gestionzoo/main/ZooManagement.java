@@ -45,9 +45,14 @@ public class ZooManagement {
          // PROZIT 5
 
         Aquatic aquatic = new Aquatic("Aquatic","Bobi",20,true,"Bahr ahmer");
+        Dolphin dolphin = new Dolphin("aquatic", "BOBO", 10, false,"Chat hlel",65);
+        Penguin penguin = new Penguin("aquatic", "said" , 15 , false , "koko" ,54);
 
+        aquatic.swim();
 
+        dolphin.swim();
 
+        penguin.swim();
 
 
     }
