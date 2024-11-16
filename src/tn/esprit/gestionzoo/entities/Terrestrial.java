@@ -19,4 +19,6 @@ public class Terrestrial extends Animal {
                 "nbrLegs=" + nbrLegs +
                 '}';
     }
+
+
 }

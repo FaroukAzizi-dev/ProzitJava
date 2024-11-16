@@ -42,17 +42,40 @@ public class ZooManagement {
         Zoo notMyZoo1 = Zoo.comparerZoo(myZoo, notMyZoo);
         System.out.println(notMyZoo1);
 
-         // PROZIT 5
+         ///////////////////////// PROZIT 5
 
-        Aquatic aquatic = new Aquatic("Aquatic","Bobi",20,true,"Bahr ahmer");
         Dolphin dolphin = new Dolphin("aquatic", "BOBO", 10, false,"Chat hlel",65);
-        Penguin penguin = new Penguin("aquatic", "said" , 15 , false , "koko" ,54);
+        Penguin penguin = new Penguin("aquatic", "said" , 15 , false , "koko" ,150);
 
-        aquatic.swim();
 
         dolphin.swim();
 
         penguin.swim();
+
+
+        //////////////////PROZIT 6
+
+        Dolphin dolphin1 = new Dolphin("aquatic", "HAMA", 10, false,"Chat hlel",65);
+        Penguin penguin1 = new Penguin("aquatic", "TATA" , 15 , false , "koko" ,54);
+
+
+        notMyZoo.addAquaticAnimal(dolphin);
+        notMyZoo.addAquaticAnimal(dolphin1);
+        notMyZoo.addAquaticAnimal(penguin);
+        notMyZoo.addAquaticAnimal(penguin1);
+
+
+        notMyZoo.afficherAquatic();
+
+        float max = notMyZoo.maxPenguinSwimmingDepth();
+        System.out.println("Pronfondeur maximale d'un penguin " + max);
+
+        notMyZoo.displayNumberofAquaticsByType();
+
+        
+
+
+
 
 
     }

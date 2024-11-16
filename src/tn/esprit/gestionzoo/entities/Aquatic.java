@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.entities;
 
-public class Aquatic extends Animal {
+public abstract class Aquatic extends Animal {
 
 
     String habitat;
@@ -21,7 +21,14 @@ public class Aquatic extends Animal {
                 '}';
     }
 
-    public void swim(){
-        System.out.println("This aquatic animal is swimming");
+    public abstract void swim();
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aquatic aquatic = (Aquatic) o;
+        boolean b = habitat.equals(aquatic.habitat) && getName().equals(aquatic.getName()) ;
+        return b && getAge() == aquatic.getAge();
     }
 }

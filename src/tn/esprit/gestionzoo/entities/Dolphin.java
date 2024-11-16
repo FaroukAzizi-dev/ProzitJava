@@ -19,7 +19,7 @@ public class Dolphin extends Aquatic{
                 "swimmingSpeed=" + swimmingSpeed +
                 '}';
     }
-
+    @Override
     public void swim(){
         System.out.println("This dolphin is swimming");
     }
